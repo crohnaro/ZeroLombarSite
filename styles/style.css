@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#main-section {
+    background-image: url(../assets/BG\ -\ Slides\ -\ FISIO\ RAUL\ -\ blue\ liso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-section-image img{
+    height: 600px;
+}
+
+#main-section-texts{
+    color: whitesmoke;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+
+#text-span{
+    color:#FFA200
+}
+
+#main-section div a{
+    width: 80%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:#FFA200;
+    color: black;
+    transition: all 0.3s;
+}
+
+#main-section div a:hover{
+    background-color: whitesmoke;
+    color:#FFA200;
+}

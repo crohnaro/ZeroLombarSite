@@ -1,59 +1,134 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: whitesmoke;
 }
 
 #main-section {
-    background-image: url(../assets/BG\ -\ Slides\ -\ FISIO\ RAUL\ -\ blue\ liso.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  background-image: url(../assets/BG\ -\ Slides\ -\ FISIO\ RAUL\ -\ blue\ liso.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-#container{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
+#container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#main-section-image img{
-    height: 600px;
+#main-section-image img {
+  position: relative;
+  bottom: -6px;
+  height: 600px;
 }
 
-#main-section-texts{
-    color: whitesmoke;
-    width: 50%;
-    display: flex;
+#main-section-texts {
+  color: whitesmoke;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 30px;
+}
+
+#main-section-texts h1 {
+  font-size: 32px;
+}
+
+#main-section-texts h4 {
+  font-style: italic;
+}
+
+#text-span {
+  color: #ffa200;
+}
+
+#main-section div a {
+  width: 70%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffa200;
+  color: black;
+  transition: all 0.3s;
+}
+
+#main-section div a:hover {
+  background-color: whitesmoke;
+  color: #ffa200;
+}
+
+@media (max-width: 900px) {
+  #container {
+    width: 100%;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 30px;
+    padding-top: 50px;
+    gap: 50px;
+  }
+
+  #main-section-texts {
+    width: 90%;
+  }
 }
 
-#text-span{
-    color:#FFA200
+#description {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-#main-section div a{
-    width: 80%;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    background-color:#FFA200;
-    color: black;
-    transition: all 0.3s;
+#description-container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#main-section div a:hover{
-    background-color: whitesmoke;
-    color:#FFA200;
+#description-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#description-texts h1:nth-child(1) {
+  color: #003e74;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#description-texts h1:nth-child(2) {
+  color: #3d3d3d;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+#description img {
+  height: 400px;
+}
+
+@media (max-width: 900px) {
+  #description-container {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+
+  #description img {
+    position: relative;
+    right: -87px;
+  }
 }

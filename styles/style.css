@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  height: 100vh;
 }
 
 #container {
@@ -24,10 +25,16 @@ body {
   justify-content: space-around;
 }
 
+#main-section-image{
+  max-width: 600px;
+}
+
 #main-section-image img {
   position: relative;
-  bottom: -6px;
-  height: 600px;
+  bottom: 28px;
+  width: 100%;
+  padding-top: 42%;
+  object-fit: cover;
 }
 
 #main-section-texts {
@@ -41,11 +48,12 @@ body {
 }
 
 #main-section-texts h1 {
-  font-size: 32px;
+  font-size: 42px;
 }
 
 #main-section-texts h4 {
   font-style: italic;
+  font-size: 22px;
 }
 
 #text-span {
@@ -53,7 +61,7 @@ body {
 }
 
 #main-section div a {
-  width: 70%;
+  width: 100%;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -70,7 +78,11 @@ body {
   color: #ffa200;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
+  #main-section{
+    height: 100%;
+  }
   #container {
     width: 100%;
     flex-direction: column;
@@ -81,8 +93,26 @@ body {
   #main-section-texts {
     width: 90%;
   }
+
+  #main-section-image img{
+    bottom: -6px;
+  }
 }
 
+
+@media (max-width: 300px){
+  #main-section-texts h1{
+    font-size: 22px;
+    text-align: center;
+  }
+  #main-section-texts h4{
+    font-size: 12px;
+    text-align: center;
+  }
+  #main-section div a{
+    width: 100%;
+  }
+}
 #description {
   background-color: whitesmoke;
   display: flex;
@@ -121,7 +151,7 @@ body {
   height: 400px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   #description-container {
     flex-direction: column-reverse;
     padding-top: 50px;

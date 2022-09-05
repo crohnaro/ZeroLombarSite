@@ -369,7 +369,7 @@ body {
 }
 
 #course-content {
-  background-image: url(../assets/human-spine.png);
+  background-image: url(../assets/3d-female-figure-with-spine-highlighted.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -385,7 +385,12 @@ body {
 #course-content h1{
   text-transform: uppercase;
   color: whitesmoke;
+  margin-top: 80px;
   font-size: 36px;
+}
+
+#course-content a{
+  margin-bottom: 80px;
 }
 
 #course-content span{
@@ -415,12 +420,12 @@ body {
 
 .card-content h3{
   text-align: center;
-  color: whitesmoke;
+  color: black;
   font-size: 28px;
 }
 
 .card-content p{
-  color: whitesmoke;
+  color: black
 }
 
 

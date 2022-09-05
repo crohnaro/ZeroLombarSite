@@ -25,7 +25,7 @@ body {
   justify-content: space-around;
 }
 
-#main-section-image{
+#main-section-image {
   max-width: 600px;
 }
 
@@ -60,7 +60,7 @@ body {
   color: #ffa200;
 }
 
-#main-section div a {
+#redirect-button {
   width: 100%;
   text-decoration: none;
   text-transform: uppercase;
@@ -73,14 +73,13 @@ body {
   transition: all 0.3s;
 }
 
-#main-section div a:hover {
+#redirect-button:hover {
   background-color: whitesmoke;
   color: #ffa200;
 }
 
 @media (max-width: 1200px) {
-
-  #main-section{
+  #main-section {
     height: 100%;
   }
   #container {
@@ -94,22 +93,21 @@ body {
     width: 90%;
   }
 
-  #main-section-image img{
+  #main-section-image img {
     bottom: -6px;
   }
 }
 
-
-@media (max-width: 300px){
-  #main-section-texts h1{
+@media (max-width: 300px) {
+  #main-section-texts h1 {
     font-size: 22px;
     text-align: center;
   }
-  #main-section-texts h4{
+  #main-section-texts h4 {
     font-size: 12px;
     text-align: center;
   }
-  #main-section div a{
+  #main-section div a {
     width: 100%;
   }
 }
@@ -156,6 +154,13 @@ body {
     flex-direction: column-reverse;
     padding-top: 50px;
   }
+  
+  #description-texts h1:nth-child(1) {
+    font-size: 16px;
+  }
+  #description-texts h1:nth-child(2) {
+    font-size: 16px;
+  }
 
   #description img {
     position: relative;
@@ -163,14 +168,75 @@ body {
   }
 }
 
-#about{
-  background-image: url(../assets/Agrupar\ 5.png);
-  background-position: center;
+#about {
+  background-image: url(../assets/figura-medica-masculina-3d-com-a-espinha-destacada_1048-10645blurr.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: right center;
+  /*background: rgb(0, 112, 185);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 112, 185, 1) 0%,
+    rgba(0, 43, 90, 1) 53%
+  );*/
   height: 100vh;
-  
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: black;
 }
 
+#about-texts{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 
+#main-text {
+  margin-left: 100px;
+  color:whitesmoke;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  gap: 30px;
+}
+
+#main-text h1{
+  font-size: 32px;
+  color: #ffa200;
+  font-weight: 900;
+}
+
+@media (max-width: 1200px){
+  #about{
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  #main-text{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+
+@media (max-width:600px){
+  #about{
+    height : 100%;
+  }
+  #about-texts span{
+    display: none;
+  }
+}
+
+@media (max-width: 300px ){
+  #main-text h1{
+    font-size: 18px;
+  }
+  #about{
+    font-size: 0.7em;
+  }
+}
 

@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -34,7 +33,7 @@ body {
   position: relative;
   bottom: 28px;
   width: 100%;
-  padding-top: 42%;
+  padding-top: 10%;
   object-fit: cover;
 }
 
@@ -79,18 +78,20 @@ body {
   color: #ffa200;
 }
 
-@media (max-height: 650px){
-  #main-section-image img{
+@media (max-height: 650px) {
+  #main-section-image img {
     bottom: 91px;
     width: 77%;
   }
 
-  #main-section-texts h1{
-    font-size:33px;
+  #main-section-texts h1 {
+    font-size: 33px;
+    text-align: center;
   }
 
-  #main-section-texts h4{
+  #main-section-texts h4 {
     font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -170,7 +171,7 @@ body {
     flex-direction: column-reverse;
     padding-top: 50px;
   }
-  
+
   #description-texts h1:nth-child(1) {
     font-size: 16px;
   }
@@ -202,7 +203,7 @@ body {
   background-color: black;
 }
 
-#about-texts{
+#about-texts {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -210,7 +211,7 @@ body {
 
 #main-text {
   margin-left: 100px;
-  color:whitesmoke;
+  color: whitesmoke;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -218,19 +219,19 @@ body {
   gap: 30px;
 }
 
-#main-text h1{
+#main-text h1 {
   font-size: 32px;
   color: #ffa200;
   font-weight: 900;
 }
 
-@media (max-width: 1200px){
-  #about{
+@media (max-width: 1200px) {
+  #about {
     justify-content: center;
     background-size: cover;
     background-position: center;
   }
-  #main-text{
+  #main-text {
     text-align: center;
     width: 100%;
     margin-left: 0;
@@ -238,63 +239,63 @@ body {
   }
 }
 
-@media (max-width:600px){
-  #about{
-    height : 100%;
+@media (max-width: 600px) {
+  #about {
+    height: 100%;
   }
-  #about-texts span{
+  #about-texts span {
     display: none;
   }
 }
 
-@media (max-width: 300px ){
-  #main-text h1{
+@media (max-width: 300px) {
+  #main-text h1 {
     font-size: 18px;
   }
-  #about{
+  #about {
     font-size: 0.7em;
   }
 }
 
-@media (max-height: 650px){
-  #main-text{
+/*@media (max-height: 650px) {
+  #main-text {
     width: 60%;
   }
-}
+}*/
 
-
-#course-divider{
+#course-divider {
   background-color: #002b5a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 380px
+  height: 380px;
+  text-align: center;
 }
 
-#course-divider h1{
-  color:  whitesmoke;
+#course-divider h1 {
+  color: whitesmoke;
 }
 
-#course-divider p{
+#course-divider p {
   color: whitesmoke;
   font-style: italic;
 }
 
-#course-divider span{
+#course-divider span {
   color: #ffa200;
 }
 
-#course-divider img{
+#course-divider img {
   width: 60px;
   color: whitesmoke;
 }
 
-#tittle h1{
+#tittle h1 {
   font-size: 30px;
 }
 
-#course-description{
+#course-description {
   background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-top.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,11 +304,9 @@ body {
   width: 100%;
   display: flex;
   height: 100vh;
-  
-  
 }
 
-#course-container{
+#course-container {
   margin-right: 130px;
   width: 30%;
   display: flex;
@@ -317,40 +316,140 @@ body {
   text-align: center;
 }
 
-#course-container h4{
+#course-container h4 {
   text-align: left;
 }
 
-#tittle p{
+#tittle p {
   font-style: italic;
 }
 
-#course-container span:nth-child(1){
+#course-container span:nth-child(1) {
   color: #ffa200;
 }
 
-#course-container span:nth-child(2){
+#course-container span:nth-child(2) {
   color: #003e74;
 }
 
-#course-container span:nth-child(3){
+#course-container span:nth-child(3) {
   color: #002b5a;
 }
 
-@media (max-width: 1090px){
-
-  #course-description{
+@media (max-width: 1090px) {
+  #course-description {
     background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-topblurr.png);
   }
 
-  #course-container{
+  #course-container {
     margin-right: 0;
     width: 100%;
   }
 
-  #course-container p{
+  #course-container p {
     font-weight: 700;
   }
 }
 
+@media (max-width: 350px) {
+  #course-description {
+    height: 100%;
+  }
+}
 
+@media (max-height: 667px) {
+  #course-container {
+    gap: 0;
+  }
+
+  #course-description {
+    height: 100%;
+  }
+}
+
+#course-content {
+  background-image: url(../assets/human-spine.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+#course-content h1{
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 36px;
+}
+
+#course-content span{
+  color: #ffa200;
+}
+
+#content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.card-content {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-content h3{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 28px;
+}
+
+.card-content p{
+  color: whitesmoke;
+}
+
+
+#course-content a{
+  width: 50%;
+}
+
+
+@media (max-width: 600px) {
+  #course-content{
+    height: 100%;
+  }
+  #course-content h1{
+    text-align: center;
+  }
+
+  #course-content a{
+    width: 90%
+  }
+}
+
+@media (max-width:1400px){
+  #content-container{
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-height: 667px){
+  #course-content{
+    height: 100%;
+  }
+}

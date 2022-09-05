@@ -276,8 +276,81 @@ body {
   color:  whitesmoke;
 }
 
+#course-divider p{
+  color: whitesmoke;
+  font-style: italic;
+}
+
+#course-divider span{
+  color: #ffa200;
+}
+
 #course-divider img{
   width: 60px;
   color: whitesmoke;
 }
+
+#tittle h1{
+  font-size: 30px;
+}
+
+#course-description{
+  background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-top.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  
+  
+}
+
+#course-container{
+  margin-right: 130px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 55px;
+  text-align: center;
+}
+
+#course-container h4{
+  text-align: left;
+}
+
+#tittle p{
+  font-style: italic;
+}
+
+#course-container span:nth-child(1){
+  color: #ffa200;
+}
+
+#course-container span:nth-child(2){
+  color: #003e74;
+}
+
+#course-container span:nth-child(3){
+  color: #002b5a;
+}
+
+@media (max-width: 1090px){
+
+  #course-description{
+    background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-topblurr.png);
+  }
+
+  #course-container{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #course-container p{
+    font-weight: 700;
+  }
+}
+
 

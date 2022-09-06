@@ -478,11 +478,7 @@ body {
   }
 }
 
-@media (max-height: 667px) {
-  #course-content {
-    height: 100%;
-  }
-}
+
 
 #practice-content{
   background-image: url(../assets/WhatsApp\ Image\ 2022-09-06\ at\ 09.36.00.png);
@@ -497,4 +493,10 @@ body {
 
 #practice-content span{
   color: #ffa200;
+}
+
+@media (max-height:664px){
+  #practice-content{
+    height: 100%;
+  }
 }

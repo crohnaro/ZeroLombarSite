@@ -60,7 +60,7 @@ body {
   color: #ffa200;
 }
 
-#redirect-button {
+.redirect-button {
   width: 100%;
   text-decoration: none;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ body {
   transition: all 0.3s;
 }
 
-#redirect-button:hover {
+.redirect-button:hover {
   background-color: whitesmoke;
   color: #ffa200;
 }
@@ -187,8 +187,8 @@ body {
 }
 
 #about {
-  background-image: url(../assets/figura-medica-masculina-3d-com-a-espinha-destacada_1048-10645blurr.png);
-  background-size: contain;
+  background-image: url(../assets/BG\ -\ Slides\ -\ FISIO\ RAUL\ -\ black.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
   /*background: rgb(0, 112, 185);
@@ -200,6 +200,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
   background-color: black;
 }
@@ -211,7 +212,7 @@ body {
 }
 
 #main-text {
-  margin-left: 100px;
+  margin-right: 200px;
   color: whitesmoke;
   width: 40%;
   display: flex;
@@ -235,7 +236,7 @@ body {
   #main-text {
     text-align: center;
     width: 100%;
-    margin-left: 0;
+    margin-right: 0;
     padding: 15px;
   }
 }
@@ -297,11 +298,7 @@ body {
 }
 
 #course-description {
-  background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-top.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   display: flex;
   height: 100vh;
@@ -314,7 +311,27 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 55px;
-  text-align: center;
+}
+
+#course-description-image{
+  max-width: 831px;
+}
+
+@media (max-height: 710px){
+  #course-description-image{
+    max-width: 631px;
+  }
+}
+@media (max-height: 850px){
+  #course-description-image{
+    max-width: 687px;
+  }
+}
+
+#course-description-image img {
+  width: 100%;
+  padding-top: 12%;
+  object-fit: cover;
 }
 
 #course-container h4 {
@@ -337,10 +354,27 @@ body {
   color: #002b5a;
 }
 
-@media (max-width: 1090px) {
+@media(max-width: 1200px){
   #course-description {
-    background-image: url(../assets/sporty-woman-with-afro-haircut-touches-waist-with-both-hands-feels-pain-in-spine-shows-location-of-inflammation-wears-grey-topblurr.png);
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
+
+  #course-container {
+    margin-right: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 55px
+  }
+}
+@media (max-width: 1090px) {
+  
 
   #course-container {
     margin-right: 0;
@@ -369,7 +403,7 @@ body {
 }
 
 #course-content {
-  background-image: url(../assets/3d-female-figure-with-spine-highlighted.png);
+  background-image: url(../assets/young-female-doctor-with-thumbs-up-gesture-standing-in-the-corridor-of-the-hospital.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -382,80 +416,88 @@ body {
   height: 100vh;
 }
 
-#course-content h1{
+#course-content h1 {
   text-transform: uppercase;
   color: whitesmoke;
   margin-top: 80px;
   font-size: 36px;
 }
 
-#course-content a{
+#course-content a {
   margin-bottom: 80px;
 }
 
-#course-content span{
+#course-content span {
   color: #ffa200;
 }
 
 #content-container {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
 }
 
 .card-content {
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: whitesmoke;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.card-content h3{
+.card-content h3 {
   text-align: center;
-  color: black;
-  font-size: 28px;
+  font-size: 46px;
+  letter-spacing: 5px;
 }
 
-.card-content p{
-  color: black
+.card-content p {
+  font-size: 19px;
 }
 
-
-#course-content a{
+#course-content a {
   width: 50%;
 }
 
+.content-wrapper{
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 600px) {
-  #course-content{
-    height: 100%;
-  }
-  #course-content h1{
+
+  #course-content h1 {
     text-align: center;
   }
 
-  #course-content a{
-    width: 90%
+  #course-content a {
+    width: 90%;
   }
 }
 
-@media (max-width:1400px){
-  #content-container{
+@media (max-width: 1400px) {
+  #content-container {
     flex-direction: column;
     gap: 50px;
   }
 }
 
-@media (max-height: 667px){
-  #course-content{
+@media (max-height: 667px) {
+  #course-content {
     height: 100%;
   }
+}
+
+#practice-content{
+  background-image: url(../assets/WhatsApp\ Image\ 2022-09-06\ at\ 09.36.00.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#practice-content span{
+  color: #ffa200;
 }
